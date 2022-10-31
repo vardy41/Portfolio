@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+/* rem -> 16px */
+/* em  */
+.sky {
+    display: flex;
+    justify-content: center;
+    background-color: cornflowerblue;
+    height: 100vh;
+    /*acnimation: sky 20s 5s 1;*/
+}
+
+.grass {
+    position: relative;
+    bottom: 0;
+    z-index: 2;
+    background-color: green;
+    width: 99vw;
+    height: 28rem;
+    top: 100rem;
+    
+}
+
+.sun {
+    background-color: yellow;
+    width: 20rem;
+    height: 20rem;
+    position: absolute;
+    left: 15rem;
+    animation: sunny 10s infinite forwards;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+/*.moon {
+    width: 20rem;
+    height: 20rem;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 15rem;
+    animation: moonforwards;
+}*/
+
+@keyframes moon {
+    0% {
+        transform: translate(-300px, 1000px); transform-origin: left 250%; 
+        rotate: -60deg;
+    }
+
+    50% {
+        transform: translate(895px, 350px); rotate: -20deg;
+    }
+  
+    100% {
+        transform: translate(2000px, 748px); rotate: 7deg; transform-origin: left 100%;
+    }
+}
+
+@keyframes sunny {
+    0% {
+        transform: translate(-300px, 1000px); transform-origin: left 250%; 
+        rotate: -60deg;
+    }
+
+    50% {
+        transform: translate(895px, 350px); rotate: -20deg;
+        background-color: orange;
+
+    }
+  
+    100% {
+        transform: translate(2000px, 748px); rotate: 7deg; transform-origin: left 100%;
+        background-color: orangered;
+    }
+}
+
+@keyframes sky {
+    100% {
+        background-color: black;
+    }
+
+}

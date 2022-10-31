@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Portfolio Mikołaj Doktor Front-End Dev"/>
+    <meta name="keywords" content="Portfolio, Front-End, Mikołaj Doktor"/>
+    <link rel="stylesheet" type="text/css" href="kwadraty.css"/>
+    <link rel="stylesheet" type="text/css" href="ankieta.css"/>
+    <link rel="stylesheet" type="text/css" href="shop.css"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="sun.css"/>
+    <title>Mikołaj Doktor</title>
+</head>
+<body>
+        <nav class="menu">
+            <ul class="menu__list">
+                <li class="menu__list-item"><a class="menu__list-link" href="index.html">O mnie</a></li>
+                <li class="menu__list-item"><a class="menu__list-link" href="#technologie" >Technologie</a></li>
+                <li class="menu__list-item"><a class="menu__list-link" href="#projekty">Projekty</a></li>
+                <li class="menu__list-item"><a class="menu__list-link" href="#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+    <section class="author">
+        <span class="author__header-one">Cześć,</span>
+        <span class="author__header-two">Jestem</span>
+        <span class="author__header-three">Mikołaj</span>
+        <div class="author__photo-border">
+            <img class="author__photo" src="nouser.png" alt="">
+        </div>
+        <p class="author__description">
+            Mam 22 lata i pochodzę z małej miejscowości na podkarpaciu.
+            Moimi zainteresowaniami są sport i komputery. Będąc dzieckiem trenowałem judo, jeździłem na zawody i często zajmowałem miejsce na podium, również grałem amatorsko w piłkę nożną,
+            którą uwielbiam oglądać. 
+            Poza judo oraz piłką nożną bardzo lubię oglądać rożne kanały motoryzacyjne na YouTube. Gdybym tylko miał możliwości na pewno zająłbym się motorsportem.
+            Od dziecka uwielbiam siedzieć przy komputerze, jednakże do tej pory było to głównie granie.
+            Programowaniem zainteresowałem się stosunkowo niedawno, jakieś 2 miesiące temu, stało się ono moją pasją.
+            Moją przyszłość wiążę ze światem IT. Uwielbiam się uczyć, pogłębiać swoją wiedzę, szybko potrafie zaakceptować nowe warunki otoczenia w pracy czy w nauce. 
+            Jestem osobą o dużym samozaparciu i nieskończonej ciekawości. 
+            Uważam, że te cechy są bardzo ważne w IT i wraz z konsekwentną nauką oraz pracą przyniosą owoce.
+            Docelowo chciałbym stać się Full-Stack Developerem, nic mnie nie powstrzyma przed osiągnięciem tego! 
+        </p>
+    </section>
+    <section class="technology">
+        <a class="technology__link" id="technologie">
+            <h2 class="technology__header">
+                Technologie:
+            </h2>
+        </a>
+        <div class="technology__html-css-container">
+            <div class="technology__html">
+                <img class="technology__html-icon" src="html-5.png">
+                <span class="technology__html-description">
+                HTML (Hyper Text Markup Language), jest to pierwszy język od którego zaczynam, staram się pisać kod tak aby był wydajny, używam BEM, oraz stosuję się do zasasd semantyki.</span>
+            </div>
+            <div class="technology__css">
+                <img class="technology__css-icon"
+                 src="css-3.png" alt="">
+                 <span class="technology__css-description">
+                    CSS jest technologią z którą styczność mam od samego początku mojej nauki. Mimo tego iż mój staż nie jest długi, potrafię stworzyć responsywną stronę.
+                 </span>
+            </div>
+        </div>
+    </section>
+    <section class="projects">
+        <a id="projekty">
+            <h2 class="projects__header">
+            Projekty:
+            </h2>
+        </a>
+    </section>
+    <section class="squaresproject">
+        <h3 class="squaresproject__header">
+            ScallingSquares
+        </h3>
+        <div class="container-squares">
+            <div class="square one"></div>
+            <div class="square two"></div>
+            <div class="square three"></div>
+        </div>
+    </section>
+    <section class="formulage">
+        <h3 class="formulage__header">
+            IntroductionForm
+        </h3>
+        <div class="container-formulage">
+            <form action="http://127.0.0.1:5500/ANKIETA/index.html" method="post">
+                <!-- fieldset -->
+                <!-- <legend></legend> -->
+                <section>
+                    <div class="quest">Dlaczego chcesz dołączyć do branży IT ? * </div>
+                    <ul>
+                        <li><label><input type="checkbox" name="aktualna praca"/><img src="icon" alt=""> Aktualna praca mnie nie cieszy. </label></li> 
+                        <li><label><input type="checkbox" name="za dziecka"/>Za dziecka kodowałem_am.</label></li>
+                        <li><label><input type="checkbox" name="jestem juz"/>Jestem już programistą_tką.</label></li>
+                        <li><label><input type="checkbox" name="lubie komputery"/>Lubię komputery.</label></li>
+                    </ul>
+                </section>
+                <section>
+                    <div class="quest2 quest3">Czy uczyłeś_aś się kodować wcześniej ? *</div>
+                        <ul>
+                            <li><label><input type="radio" name="jeden"/>Samodzielnie.</label></li>
+                            <li><label class="radiol"><input type="radio" name="jeden"/>Bootcamp.</label></li>
+                            <li><label><input c type="radio" name="jeden"/>Studia.</label></li> 
+                            <li><label><input type="radio" name="jeden"/>Nie.</label></li>
+                        </ul>
+                </section>
+                <section>
+                    <!-- label -->
+                        <div class="quest2"><label for="poleodpowiedz">Opisz w kilku zdaniach swoje wrażenia z nauki w tym miejscu.</label></div>
+                        <div class="box"><textarea class="text" name="pole odpowiedz" id="poleodpowiedz"></textarea></div>
+                        <!--kolumny i wiersze po co skoro moge ustalac sam wielkosc textarea-->
+                </section>
+                <section>
+                    <div class="quest2">Jaki jest twój cel związany z nauką ? *</div>
+                    <select class="sel">
+                        <option disabled selected value="">Wybierz odpowiedź</option>
+                        <option value="zmienic">Zmienić pracę</option>
+                        <option value="znalezc">Znaleźć lepszą pracę</option>
+                        <option value="rozwój">Rozwój w technologii</option>
+                        <option value="stworzyc">Stworzyć portfolio</option>
+                    </select>
+                </section>
+                <section>
+                    <div class="quest2">Jaką specjalizację chcesz osiągnąć ? *</div>
+                    <select class="sel" name="specialization">
+                        <option disabled selected value="">Wybierz odpowiedź</option>
+                        <option value="FrontendJS">Frontend JS</option>
+                        <option value="BackendJS">Backend JS</option>
+                        <option value="Solidity">Solidity</option>
+                        <option value="Python">Python</option>
+                    </select>
+                </section>
+                <section>
+                    <div class="quest2">Ile godzin tygodniowo możesz poświęcić na naukę ? *</div>
+                    <input class="hour" type="number" name="godziny" min="0" max="16" />
+                </section>
+                <section>
+                    <div class="quest2">Zaznacz na kalendarzu, kiedy chciałbyś zacząć naukę ? *</div>
+                    <div class="date">Maj 2022
+                        <div class="icon"><img src="iconmonstr-angel-left-thin-16.png"/> <img src="iconmonstr-angel-right-thin-16.png"/></div>
+                    </div> 
+                </section>
+                <section>
+                    <div class="days">   
+                        <div>Mon</div><div>Tue</div><div>We</div><div>Th</div><div>Fr</div><div>Sa</div><div>Su</div>
+                    </div> 
+                    <div class="containercalendar">
+                            <div class="calendar">1</div><div class="calendar">2</div>
+                            <div class="calendar">3</div><div class="calendar">4</div><div class="calendar">5</div><div class="calendar">6</div><div class="calendar">7</div><div class="calendar">8</div><div class="calendar">9</div><div class="calendar">10</div><div class="calendar">11</div><div class="calendar">12</div><div class="calendar">13</div><div class="calendar">14</div><div class="calendar">15</div><div class="calendar">16</div><div class="calendar">17</div><div class="calendar blue">18</div><div class="calendar">19</div><div class="calendar">20</div><div class="calendar">21</div><div class="calendar">22</div><div class="calendar">23</div><div class="calendar">24</div><div class="calendar">25</div><div class="calendar">26</div><div class="calendar">27</div><div class="calendar">28</div><div class="calendar">29</div><div class="calendar">30</div><div class="calendar">1</div><div class="calendar">2</div><div class="calendar">3</div><div class="calendar">4</div><div class="calendar">5</div>
+                    </div>
+                </section>
+                    <section>
+                        <div class="quest4"><label for="telefon"> Podaj swój numer telefonu. *</label></div>
+                        <input class="sel" type="tel" name="telefon" id="telefon"/>
+                    </section>
+                    <section>
+                        <div class="quest4"><label for="email">Podaj swój adres email. *</label></div>
+                        <input class="sel" type="email" name="email" id="email"/>
+                    </section>
+            </form>
+        </div>
+    </section>
+    <section class="shop">
+        <h3 class="shop__header">ResponsiveShopDesign</h3>
+        <div class="main-container">
+            <div class="container-shop">
+                <input type="checkbox" class="btn" id="btn"/>
+                <label class="item container__item-position" for="btn">
+                    <img class="item__img" src="Samsung-photo.png"/>
+                    <div class="item__product-name">Samsung</div>
+                    <span class="item__product-price">4899zł</span>
+                </label>
+                <input type="checkbox" class="btn" id="btn2">
+                <label class="item container__item-position" for="btn2">
+                    <img class="item__img" src="Lens-photo.png">
+                    <div class="item__product-name">Obiektyw 35mm</div>
+                    <span class="item__product-price">1800zł</span>
+                </label>
+                <input type="checkbox" class="btn" id="btn3"/>
+                <label class="item container__item-position" for="btn3">
+                    <img class="item__img" src="Sony-photo.png">
+                    <div class="item__product-name">Kamera SONY 1.8 / 19-76</div>
+                    <span class="item__product-price">899zł</span>
+                </label>
+                <input type="checkbox" class="btn" id="btn4"/>
+                <label class="item container__item-position" for="btn4">
+                    <img class="item__img" src="Gimbal-photo.png"/>
+                    <div class="item__product-name">GL IDECAM HD - 2000</div>
+                    <span class="item__product-price">1450zł</span>
+                </label>
+                <input type="checkbox" class="btn" id="btn5"/>
+                <label class="item container__item-position"  for="btn5">
+                    <img class="item__img" src="Sennheise-photo.png"/>
+                    <div class="item__product-name">SENNHEISE mikrofony</div>
+                    <span class="item__product-price">2579zł</span>
+                </label>
+                <input type="checkbox" class="btn" id="btn6"/>
+                <label class="item container__item-position" for="btn6">
+                    <img class="item__img" src="Logi-photo.png"/>
+                    <div class="item__product-name">Myszka logi tech 750</div>
+                    <span class="item__product-price">350zł</span>
+                </label>
+                <input type="checkbox" class="btn" id="btn7"/>
+                <label class="item container__item-position" for="btn7">
+                    <img class="item__img" src="Smartwatch-photo.png"/>
+                    <div class="item__product-name">Smartwatch Sanszong</div>
+                    <span class="item__product-price">200zł</span>
+                </label>
+                <input type="checkbox" class="btn" id="btn8"/>
+                <label class="item container__item-position" for="btn8"> 
+                    <img class="item__img" src="Headphones-photo.png"/>
+                    <div class="item__soldout item__product-name">Słuchawki bezprzewodowe</div>
+                    <span class="item__soldout item__product-price">4899zł</span>
+                </label>
+                <input type="checkbox" class="btn" id="btn9"/>
+                <label class="item container__item-position " for="btn9">
+                    <img class="item__img" src="Lumix-phptp.png"/>
+                    <div class="item__soldout item__product-name">Aparat Lumix GH5</div>
+                    <span class="item__soldout item__product-price">4899zł</span>
+                </label>
+                </div>
+            </div>
+    </section>
+    <!-- <section class="sun-animation">
+        <h3 class="sun-animation__header">SunAnimation</h3>
+        <div class="sky">
+            <div class="grass"></div>    
+            <div class="sun"></div>  
+            <div class="moon"></div>
+        </div>
+    </section> -->
+    <section class="form-container">
+        <a id="kontakt">
+            <form class="form-contact" action="http://127.0.0.1:5500/PORTFOLIO2/index.html#projekty"/>
+                <fieldset class="form-contact__fset">
+                        <legend class="form-cotact__legend">Kontakt</legend>
+                    <label class="form-contact__label" for="emailmessage">E-mail:</label>
+                    <input class="form-cotact__input" type="email" placeholder="Wpisz swój adres e-mail" id="emailmessage" required/>
+                    <label class="form-contact__label" for="text">Wiadomość:</label>
+                    <textarea class="textarea" id="text" required placeholder="Wpisz treść wiadomości."></textarea>
+                    <input type="submit">
+                </fieldset>
+            </form>
+        </a>
+    </section>  
+    <footer class="footer">
+        <span class="footer__contact-info">Social Media:</span>
+        <a href="https://www.facebook.com/profile.php?id=100002987712870">
+            <img class="footer__contact-icon-fb" src="iconmonstr-facebook-3.svg" alt="">
+        </a>
+        <a href="https://github.com/vardy41">
+            <img class="footer__contact-icon-gh" src="iconmonstr-github-1.svg" alt="">
+        </a>
+    </footer>
+</body>
+</html>

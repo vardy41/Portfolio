@@ -1,0 +1,872 @@
+@font-face {
+    font-family: 'Chakra Petch';
+    src: url('ChakraPetch-Bold.ttf');
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #292929;
+    color: white;
+    font-family: 'Chakra Petch', sans-serif;
+    overflow-x: hidden;
+}
+
+html {
+    font-size: 62.5%;
+}
+.header {
+    height: 30rem;
+}
+
+.menu {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+.menu__list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 7rem;
+    background-color: #808080;
+    font-size: 2.2rem;
+    gap: 3rem;
+    padding-right: 2rem;
+    border: 0.4rem solid purple;
+}
+
+.menu__list-item {
+    list-style: none;
+}
+
+
+span {
+    font-size: 12rem;
+    margin: 0;
+}
+
+
+.menu__list-link {
+    text-decoration: none;
+    color: white;
+}
+
+.author__photo {
+    position: absolute;
+    z-index: 1;
+    width: 20rem;
+    height: 20rem;
+    right: 10rem;
+    top: 10rem;
+    border-radius: 10%;
+}
+
+
+.author-name {
+    color: white;
+    margin-right: 126rem;
+    font-size: 4rem;
+}
+
+.author__header-one {
+    margin-left: 6rem;
+}
+
+.author__header-two {
+    margin-left: 7rem;
+}
+
+.author__header-three {
+    margin-left: 11rem;
+}
+
+.author__header-one:hover, .author__header-two:hover, .author__header-three:hover  {
+    color:  #855399;
+}
+
+
+
+.author__header-one, .author__header-two, .author__header-three {
+    animation: slide linear 1s;;
+}
+
+.author__description {
+    padding-right: 30rem;
+    font-size: 3rem;
+    margin-left: 8rem;
+    margin-top: 5rem;
+    animation: slide linear 2s;
+}
+
+.author {
+    display: flex;
+    flex-direction: column;
+}
+
+.author__photo-border {    
+    position: absolute;
+    top: 16rem;
+    align-self: center;
+    width: 40rem;
+    height: 40rem;
+    border: 0.3rem solid purple;
+    border-radius: 50%;
+}
+
+.footer__contact-info {
+    font-size: 2.5rem;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 15rem;
+    background-color: #808080;
+    border-top: 0.4rem solid purple;
+    margin-top: 14.6rem;
+}
+
+.footer__contact-icon-fb {
+    width: 4rem;
+    margin: 1rem 0 0 0;
+}
+
+.footer__contact-icon-gh {
+    width: 4rem;
+    margin: 1rem 0 0 0;
+}
+
+.footer__contact-icon-fb:hover {
+    background-color: white;
+    border-radius: 20%;
+}
+
+.footer__contact-icon-gh:hover {
+    background-color: white;
+    border-radius: 50%;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-20%);
+        color: purple;
+    }
+    50% {
+        transform: translateX(0%);
+        transition: color;
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes photorotate {
+    0% {
+        transform-origin: 100%;
+        transform: rotate(360deg);
+    }
+    100% {
+        transform-origin: 0%;
+        transform: rotate(0deg);
+    }
+}
+
+.technology__html-css-container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.technology {
+    display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+.technology__header, .projects__header {
+    font-size: 7rem;
+}
+
+.technology__html {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 40rem;
+    height: 50rem;
+    border: 0.3rem solid orangered;
+    border-radius: 10%;
+    background-color: white;
+    color: #292929;
+}
+
+.technology__css {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40rem;
+    height: 50rem;
+    border: 0.3rem solid blue;
+    border-radius: 10%;
+    margin-left: 5rem;
+    background-color: white;
+    color: #292929;
+}
+
+.technology__html-icon {
+    height: 12.8rem;
+    width: 12.8rem;
+    margin-top: 3rem;
+}
+
+.technology__css-icon {
+    height: 12.8rem;
+    width: 12.8rem;
+    margin-top: 3rem;
+}
+
+.technology__html-description {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.technology__css-description {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.technology__css:hover {
+    transform: scale(1.1);
+    transition: 2s;
+}
+
+.technology__html:hover {
+    transform: scale(1.1);
+    transition: 2s;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.projects__image {
+    width: 30rem;
+    height: 20rem;
+    border: 0.4rem solid purple;
+    border-radius: 10%;
+    background-color: white;
+}
+
+.projects__image:hover {
+    transform: scale(1.5);
+    transition: 2s;
+}
+
+/* ScallingSquares - początek */
+
+.squaresproject {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-squares {
+    border: 0.3rem solid purple;
+}
+
+/* Scallingsquares - koniec */
+/* formularz początek */
+
+.form-container {
+    display: flex;
+    justify-content: center;
+}
+
+.form-contact{
+    margin-top: 20rem;
+    font-family: 'Chakra Petch';
+}
+
+.form-contact__fset {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 50rem;
+    height: 50rem;
+    font-size: 4rem;
+}
+
+.form-contact__label {
+    font-size: 2rem;
+}
+
+.textarea {
+    height: 50rem;
+    border: 0.3rem solid purple;
+    background-color: #292929;
+    color: white;
+}
+
+
+input[type=submit] {
+    height: 10rem;
+    border: 0.3em solid purple;
+    border-radius: 5%;
+    font-weight: bold;
+    color: purple;
+}
+
+
+input[type=submit]:hover {
+    background-color: #292929;
+}
+
+/* formularz koniec */
+
+.container-shop {
+    font-family: 'Montserrat';
+    font-size: 1.4rem;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.shop__header, .sun-animation__header, .formulage__header, .squaresproject__header {
+    font-size: 4rem;
+}
+
+.h1__descriptionflex {
+    color: white;
+    font-style: normal;
+}
+
+
+.projects__image {
+    display: flex;
+}
+
+.formulage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.shop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ANIMACJA SŁOŃCA - POCZĄTEK */
+
+.sun-animation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sky {
+    width: 90%;
+}
+
+.sun-animation__header {
+    font-size: 4rem;
+}
+
+.days {
+    width: 48.4%;
+}
+
+
+/* ANIMACJA SŁOŃCA - KONIEC */
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .menu{
+        position: sticky;
+        top: 0;
+        z-index: 3;
+    }
+    .menu__list {
+        justify-content: flex-start;
+        gap: 1rem;
+        width: 100%;
+        height: 5rem;
+        font-size: 1.4rem;
+    }
+    span {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 5rem;
+    }
+    .author {
+        display: flex;
+    }
+    .author__header-one, .author__header-two, .author__header-three {
+        margin: 0;
+    }
+    .author__header-one {
+        margin-top: 15rem;
+    }
+
+    .author__photo {
+        position: absolute;
+        width: 5rem;
+        height: 5rem;
+        top: 2.3rem;
+        left: 2.6rem; 
+        
+    }
+    .author__description {
+        margin-top: 1rem;
+        padding-right: 5rem;
+        font-size: 1.2rem;
+    }
+
+    .author__photo-border {
+        width: 10rem;
+        height: 10rem;
+        top: 10.5rem;
+    }
+    .technology__header, .projects__header {
+        font-size: 3rem;
+    }
+    .technology {
+        flex-direction: column;
+    }
+    .technology__html-css-container{
+        flex-direction: column;
+        align-items: center;
+
+        gap: 2rem;
+        font-size: 1rem;
+        margin-left: 2rem;
+    }
+    .technology__html {
+        width: 40%;
+        height: 25rem;
+        font-size: 0.5rem;
+    }
+    .technology__css {
+        width: 40%;
+        height: 25rem;
+        margin-left: 0;
+    }
+    .technology__css-icon {
+        width: 6.8rem;
+        height: 6.8rem;
+        margin-top: 1rem;
+    }
+    .technology__html-icon {
+        margin-top: 1rem;
+        width: 6.8rem;
+        height: 6.8rem;
+    }
+    .technology__html-description, .technology__css-description {
+        margin-bottom: 1rem;
+        font-size: 1rem;
+    }
+    .squaresproject {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .squaresproject__header {
+        font-size: 2rem;
+    }
+    .square {
+        width: 3rem;
+        height: 3rem;
+    }
+    .container-squares {
+        width: 50%;
+        height: 10rem;
+        border: 0.1rem solid purple;
+    }
+    .form-contact__fset {
+        width: 50%;
+        height: 35rem;
+    }
+    .footer {
+        width: 100%;
+        height: 10rem;
+    }
+    .footer__contact-info {
+        font-size: 1.6rem;
+        margin: 0 0 1rem 0;
+    }
+    .footer__contact-icon-fb {
+        height: 1.9rem;
+        width: 1.9rem;
+        margin: 0 0 0.5rem 0;
+    }
+    .footer__contact-icon-gh {
+        width: 1.9rem;
+        height: 1.9rem;
+        margin: 0;
+    }
+    .container-formulage {
+        width: 60%;
+        font-size: 1rem;
+    }
+    .formulage__header, .squaresproject__header, .shop__header {
+        font-size: 2rem;
+    }
+    .sel {
+        margin-left: 1.5rem;
+    }
+   .container-shop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%; 
+        width: 60%;
+        font-size: 1rem;
+          
+        /* Dlaczego height 100% ? Rozumiem, ze rozjezdzanie mialo zwiazek z wysokoscia poprzez to ze tlo na wysokosc sie nie miescilo, natomiast czy to 100% stosuje sie do wysokosci kontenera okreslonej w rem i zajmuje jego 100%? */
+   }
+   .item__product-price {
+    font-size: 1.2rem;
+   }
+   .item, .item__img{
+    width: 50%;
+    height: 50%;
+   }
+  .sun-animation {
+    display: none;
+  }
+  .containercalendar {
+    width: 70%;
+  }
+  .days {
+    width: 70%;
+  }
+} 
+
+
+@media (min-width: 768px) and (max-width: 1199px) {
+     .menu{
+        position: sticky;
+        top: 0;
+        z-index: 3;
+    }
+    .menu__list {
+        justify-content: flex-start;
+        gap: 1rem;
+        height: 5rem;
+        width: 100%;
+        font-size: 2rem;
+    }
+    span {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 5rem;
+    }
+    .author {
+        display: flex;
+    }
+    .author__header-one, .author__header-two, .author__header-three {
+        margin: 0;
+        font-size: 7rem;
+    }
+    .author__header-one {
+        margin-top: 22rem;
+    }
+
+    .author__photo {
+        position: absolute;
+        width: 10rem;
+        height: 10rem;
+        top: 4.6rem;
+        left: 5rem; 
+        
+    }
+    .author__description {
+        margin-top: 1.2rem;
+        padding-right: 5rem;
+        font-size: 1.7rem;
+    }
+
+    .author__photo-border {
+        width: 20rem;
+        height: 20rem;
+        top: 10.5rem;
+    }
+    .technology__header, .projects__header {
+        font-size: 3rem;
+    }
+    .technology {
+        flex-direction: column;
+    }
+    .technology__html-css-container{
+        gap: 2rem;
+        font-size: 1.6rem;
+        margin-left: 2rem;
+    }
+    .technology__html {
+        width: 20%;
+        height: 25rem;
+        font-size: 0.5rem;
+    }
+    .technology__css {
+        width: 20%;
+        height: 25rem;
+        margin-left: 0;
+    }
+    .technology__css-icon {
+        width: 6.8rem;
+        height: 6.8rem;
+        margin-top: 1rem;
+    }
+    .technology__html-icon {
+        margin-top: 1rem;
+        width: 6.8rem;
+        height: 6.8rem;
+    }
+    .technology__css-description, .technology__html-description {
+        margin-bottom: 1rem;
+        font-size: 1.3rem;
+    }
+    .squaresproject {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .squaresproject__header {
+        margin: 0;
+    }
+    .square {
+        width: 4rem;
+        height: 4rem;
+    }
+    .container-squares {
+        width: 50%;
+        height: 10rem;
+        border: 0.1rem solid purple;
+    }
+    .form-contact__fset {
+        width: 50rem;
+        height: 50%rem;
+    }
+    .footer {
+        width: 100%;
+        height: 10rem;
+    }
+    .footer__contact-info {
+        font-size: 1.9rem;
+        margin: 0 0 1rem 0;
+    }
+    .footer__contact-icon-fb {
+        height: 2.2rem;
+        width: 2.2rem;
+        margin: 0 0 0.5rem 0;
+    }
+    .footer__contact-icon-gh {
+        width: 2.2rem;
+        height: 2.2rem;
+        margin: 0;
+    }
+    .container-formulage {
+        width: 60%;
+        font-size: 1rem;
+    }
+    .formulage__header, .squaresproject__header, .shop__header {
+        font-size: 2rem;
+    }
+    .sel {
+        margin-left: 1.5rem;
+    }
+   .container-shop {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        height: 100%; 
+        width: 60%;
+        font-size: 1rem;
+          
+        /* Dlaczego height 100% ? Rozumiem, ze rozjezdzanie mialo zwiazek z wysokoscia poprzez to ze tlo na wysokosc sie nie miescilo, natomiast czy to 100% stosuje sie do wysokosci kontenera okreslonej w rem i zajmuje jego 100%? */
+   }
+   .item__product-price {
+    font-size: 1.2rem;
+   }
+
+   .sun-animation {
+    display: none;
+   }
+   .days {
+    width: 50%;
+   }
+   .containercalendar {
+    width: 50%;
+   }
+}
+
+@media (min-width: 1200px) and (max-width: 1899px) {
+    .menu{
+        position: sticky;
+        top: 0;
+        z-index: 3;
+    }
+    .menu__list {
+        justify-content: flex-start;
+        gap: 1rem;
+        height: 5rem;
+        width: 100%;
+        font-size: 2rem;
+    }
+    span {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 5rem;
+    }
+    .author {
+        display: flex;
+    }
+    .author__header-one, .author__header-two, .author__header-three {
+        margin: 0;
+        font-size: 7rem;
+    }
+    .author__header-one {
+        margin-top: 22rem;
+    }
+
+    .author__photo {
+        position: absolute;
+        width: 10rem;
+        height: 10rem;
+        top: 4.6rem;
+        left: 5rem; 
+    }
+    .author__description {
+        margin-top: 1.2rem;
+        padding-right: 5rem;
+        font-size: 1.7rem;
+    }
+
+    .author__photo-border {
+        width: 20rem;
+        height: 20rem;
+        top: 10.5rem;
+    }
+    .technology__header, .projects__header {
+        font-size: 4rem;
+    }
+    .technology {
+        flex-direction: column;
+    }
+    .technology__html-css-container{
+        justify-content: center;
+        gap: 2rem;
+        font-size: 1rem;
+    }
+    .technology__html {
+        width: 20%;
+        height: 25rem;
+        font-size: 0.5rem;
+    }
+    .technology__css {
+        width: 20%;
+        height: 25rem;
+        margin-left: 0;
+    }
+    .technology__css-icon {
+        width: 6.8rem;
+        height: 6.8rem;
+        margin-top: 1rem;
+    }
+    .technology__html-icon {
+        margin-top: 1rem;
+        width: 6.8rem;
+        height: 6.8rem;
+    }
+     
+    .technology__css-description, .technology__html-description {
+        margin-bottom: 1rem;
+        font-size: 1.7rem;
+    }
+    .squaresproject {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .squaresproject__header {
+        margin: 0;
+    }
+    .square {
+        width: 5rem;
+        height: 5rem;
+    }
+    .container-squares {
+        width: 50%;
+        height: 10rem;
+        border: 0.1rem solid purple;
+    }
+    .form-contact__fset {
+        width: 50rem;
+        height: 50%rem;
+    }
+    .footer {
+        width: 100%;
+        height: 10rem;
+    }
+    .footer__contact-info {
+        font-size: 1.9rem;
+        margin: 0 0 1rem 0;
+    }
+    .footer__contact-icon-fb {
+        height: 2.2rem;
+        width: 2.2rem;
+        margin: 0 0 0.5rem 0;
+    }
+    .footer__contact-icon-gh {
+        width: 2.2rem;
+        height: 2.2rem;
+        margin: 0;
+    }
+    .container-formulage {
+        width: 50%;
+        font-size: 1rem;
+    }
+    .formulage__header, .squaresproject__header, .shop__header {
+        font-size: 3rem;
+    }
+    .sel {
+        margin-left: 1.5rem;
+    }
+   .container-shop {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        height: 100%; 
+        width: 50%;
+        font-size: 1rem;
+          
+        /* Dlaczego height 100% ? Rozumiem, ze rozjezdzanie mialo zwiazek z wysokoscia poprzez to ze tlo na wysokosc sie nie miescilo, natomiast czy to 100% stosuje sie do wysokosci kontenera okreslonej w rem i zajmuje jego 100%? */
+   }
+   .item__product-price {
+    font-size: 1.2rem;
+   }
+
+   .sun-animation {
+    display: none;
+   }
+   .days {
+    width: 50%;
+   }
+}
+

@@ -1,0 +1,58 @@
+body {
+    color: white;
+}
+
+
+.container-squares {
+/* position: fixed;
+top: 50%; */
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+    height: 20rem;
+}
+
+.square{
+    /* DRY */
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+}
+.square:hover {
+    transform: scale(2.0);
+}
+
+
+.two {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+}
+
+.three {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+}
+
+.one:hover {
+    transform: scale(2.0);
+}
+
+.two:hover {
+    transform: scale(2.0);
+}
+
+.one, .two {
+    transition: transform 1s;
+}
+
+.three:hover {
+    transform: scale(100);
+}
+
+.three {
+   transition: transform 60s;
+}
